@@ -1,4 +1,4 @@
-﻿using VerySimpleRSS.Data;
+﻿using MICRSSApplication.Data;
 
 using System;
 using System.Collections.Generic;
@@ -18,12 +18,12 @@ using Windows.System;
 
 // Шаблон элемента страницы сгруппированных элементов задокументирован по адресу http://go.microsoft.com/fwlink/?LinkId=234231
 
-namespace VerySimpleRSS
+namespace MICRSSApplication
 {
     /// <summary>
     /// Страница, на которой отображается сгруппированная коллекция элементов.
     /// </summary>
-    public sealed partial class GroupedItemsPage : VerySimpleRSS.Common.LayoutAwarePage
+    public sealed partial class GroupedItemsPage : MICRSSApplication.Common.LayoutAwarePage
     {
         public GroupedItemsPage()
         {

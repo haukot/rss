@@ -11,7 +11,7 @@ using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace VerySimpleRSS.Common
+namespace MICRSSApplication.Common
 {
     /// <summary>
     /// SuspensionManager записывает глобальное состояние сеанса, чтобы упростить управление жизненным циклом процессов

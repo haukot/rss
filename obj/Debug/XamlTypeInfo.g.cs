@@ -9,17 +9,17 @@
 
 
 
-namespace VerySimpleRSS
+namespace MICRSSApplication
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace VerySimpleRSS
         {
             if(_provider == null)
             {
-                _provider = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace VerySimpleRSS
     }
 }
 
-namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
+namespace MICRSSApplication.MICRSSApplication_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -112,73 +112,73 @@ namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
             }
         }
 
-        private object Activate_0_LayoutAwarePage() { return new global::VerySimpleRSS.Common.LayoutAwarePage(); }
+        private object Activate_0_LayoutAwarePage() { return new global::MICRSSApplication.Common.LayoutAwarePage(); }
 
-        private object Activate_1_GroupedItemsPage() { return new global::VerySimpleRSS.GroupedItemsPage(); }
+        private object Activate_1_GroupedItemsPage() { return new global::MICRSSApplication.GroupedItemsPage(); }
 
-        private object Activate_2_GroupDetailPage() { return new global::VerySimpleRSS.GroupDetailPage(); }
+        private object Activate_2_GroupDetailPage() { return new global::MICRSSApplication.GroupDetailPage(); }
 
-        private object Activate_3_RichTextColumns() { return new global::VerySimpleRSS.Common.RichTextColumns(); }
+        private object Activate_3_RichTextColumns() { return new global::MICRSSApplication.Common.RichTextColumns(); }
 
-        private object Activate_4_ItemDetailPage() { return new global::VerySimpleRSS.ItemDetailPage(); }
+        private object Activate_4_ItemDetailPage() { return new global::MICRSSApplication.ItemDetailPage(); }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
         {
-            global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType userType;
+            global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType userType;
 
             switch (typeName)
             {
             case "Windows.UI.Xaml.Controls.Page":
-                xamlType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
+                xamlType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
                 break;
 
             case "Windows.UI.Xaml.Controls.UserControl":
-                xamlType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
+                xamlType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
                 break;
 
             case "Windows.UI.Xaml.Controls.Panel":
-                xamlType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Panel));
+                xamlType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Panel));
                 break;
 
             case "Windows.UI.Xaml.Controls.RichTextBlock":
-                xamlType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.RichTextBlock));
+                xamlType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.RichTextBlock));
                 break;
 
             case "Windows.UI.Xaml.DataTemplate":
-                xamlType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.DataTemplate));
+                xamlType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.DataTemplate));
                 break;
 
-            case "VerySimpleRSS.Common.LayoutAwarePage":
-                userType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::VerySimpleRSS.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+            case "MICRSSApplication.Common.LayoutAwarePage":
+                userType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::MICRSSApplication.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_LayoutAwarePage;
                 xamlType = userType;
                 break;
 
-            case "VerySimpleRSS.GroupedItemsPage":
-                userType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::VerySimpleRSS.GroupedItemsPage), GetXamlTypeByName("VerySimpleRSS.Common.LayoutAwarePage"));
+            case "MICRSSApplication.GroupedItemsPage":
+                userType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::MICRSSApplication.GroupedItemsPage), GetXamlTypeByName("MICRSSApplication.Common.LayoutAwarePage"));
                 userType.Activator = Activate_1_GroupedItemsPage;
                 xamlType = userType;
                 break;
 
-            case "VerySimpleRSS.GroupDetailPage":
-                userType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::VerySimpleRSS.GroupDetailPage), GetXamlTypeByName("VerySimpleRSS.Common.LayoutAwarePage"));
+            case "MICRSSApplication.GroupDetailPage":
+                userType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::MICRSSApplication.GroupDetailPage), GetXamlTypeByName("MICRSSApplication.Common.LayoutAwarePage"));
                 userType.Activator = Activate_2_GroupDetailPage;
                 xamlType = userType;
                 break;
 
-            case "VerySimpleRSS.Common.RichTextColumns":
-                userType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::VerySimpleRSS.Common.RichTextColumns), GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
+            case "MICRSSApplication.Common.RichTextColumns":
+                userType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::MICRSSApplication.Common.RichTextColumns), GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
                 userType.Activator = Activate_3_RichTextColumns;
-                userType.SetContentPropertyName("VerySimpleRSS.Common.RichTextColumns.RichTextContent");
+                userType.SetContentPropertyName("MICRSSApplication.Common.RichTextColumns.RichTextContent");
                 userType.AddMemberName("RichTextContent");
                 userType.AddMemberName("ColumnTemplate");
                 xamlType = userType;
                 break;
 
-            case "VerySimpleRSS.ItemDetailPage":
-                userType = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::VerySimpleRSS.ItemDetailPage), GetXamlTypeByName("VerySimpleRSS.Common.LayoutAwarePage"));
+            case "MICRSSApplication.ItemDetailPage":
+                userType = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::MICRSSApplication.ItemDetailPage), GetXamlTypeByName("MICRSSApplication.Common.LayoutAwarePage"));
                 userType.Activator = Activate_4_ItemDetailPage;
                 xamlType = userType;
                 break;
@@ -190,42 +190,42 @@ namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
 
         private object get_0_RichTextColumns_RichTextContent(object instance)
         {
-            var that = (global::VerySimpleRSS.Common.RichTextColumns)instance;
+            var that = (global::MICRSSApplication.Common.RichTextColumns)instance;
             return that.RichTextContent;
         }
         private void set_0_RichTextColumns_RichTextContent(object instance, object Value)
         {
-            var that = (global::VerySimpleRSS.Common.RichTextColumns)instance;
+            var that = (global::MICRSSApplication.Common.RichTextColumns)instance;
             that.RichTextContent = (global::Windows.UI.Xaml.Controls.RichTextBlock)Value;
         }
         private object get_1_RichTextColumns_ColumnTemplate(object instance)
         {
-            var that = (global::VerySimpleRSS.Common.RichTextColumns)instance;
+            var that = (global::MICRSSApplication.Common.RichTextColumns)instance;
             return that.ColumnTemplate;
         }
         private void set_1_RichTextColumns_ColumnTemplate(object instance, object Value)
         {
-            var that = (global::VerySimpleRSS.Common.RichTextColumns)instance;
+            var that = (global::MICRSSApplication.Common.RichTextColumns)instance;
             that.ColumnTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlMember xamlMember = null;
-            global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType userType;
+            global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlMember xamlMember = null;
+            global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
-            case "VerySimpleRSS.Common.RichTextColumns.RichTextContent":
-                userType = (global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("VerySimpleRSS.Common.RichTextColumns");
-                xamlMember = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlMember(this, "RichTextContent", "Windows.UI.Xaml.Controls.RichTextBlock");
+            case "MICRSSApplication.Common.RichTextColumns.RichTextContent":
+                userType = (global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MICRSSApplication.Common.RichTextColumns");
+                xamlMember = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlMember(this, "RichTextContent", "Windows.UI.Xaml.Controls.RichTextBlock");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_0_RichTextColumns_RichTextContent;
                 xamlMember.Setter = set_0_RichTextColumns_RichTextContent;
                 break;
-            case "VerySimpleRSS.Common.RichTextColumns.ColumnTemplate":
-                userType = (global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("VerySimpleRSS.Common.RichTextColumns");
-                xamlMember = new global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlMember(this, "ColumnTemplate", "Windows.UI.Xaml.DataTemplate");
+            case "MICRSSApplication.Common.RichTextColumns.ColumnTemplate":
+                userType = (global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MICRSSApplication.Common.RichTextColumns");
+                xamlMember = new global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlMember(this, "ColumnTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_1_RichTextColumns_ColumnTemplate;
                 xamlMember.Setter = set_1_RichTextColumns_ColumnTemplate;
@@ -285,9 +285,9 @@ namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlSystemBaseType
     {
-        global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -299,7 +299,7 @@ namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -480,7 +480,7 @@ namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -489,7 +489,7 @@ namespace VerySimpleRSS.VerySimpleRSS_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::VerySimpleRSS.VerySimpleRSS_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::MICRSSApplication.MICRSSApplication_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

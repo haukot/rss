@@ -1,9 +1,9 @@
 ﻿<Application
-    x:Class="VerySimpleRSS.App"
+    x:Class="MICRSSApplication.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:VerySimpleRSS"
-    xmlns:localData="using:VerySimpleRSS.Data">
+    xmlns:local="using:MICRSSApplication"
+    xmlns:localData="using:MICRSSApplication.Data">
 
     <Application.Resources>
         <ResourceDictionary>

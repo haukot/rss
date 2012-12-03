@@ -1,7 +1,7 @@
 ﻿using System;
 using Windows.UI.Xaml.Data;
 
-namespace VerySimpleRSS.Common
+namespace MICRSSApplication.Common
 {
     /// <summary>
     /// Конвертер значений, который преобразует значение true в значение false и наоборот.

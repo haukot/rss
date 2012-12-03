@@ -22,14 +22,14 @@ using System.IO;
 // Приложения могут использовать эту модель в качестве начальной точки и добавлять к ней дополнительные элементы или полностью удалить и
 // заменить ее другой моделью, соответствующей их потребностям.
 
-namespace VerySimpleRSS.Data
+namespace MICRSSApplication.Data
 {
     /// <summary>
     /// Базовый класс объектов <see cref="SampleDataItem"/> и <see cref="SampleDataGroup"/>, который
     /// определяет свойства, общие для обоих объектов.
     /// </summary>
     [Windows.Foundation.Metadata.WebHostHidden]
-    public abstract class SampleDataCommon : VerySimpleRSS.Common.BindableBase
+    public abstract class SampleDataCommon : MICRSSApplication.Common.BindableBase
     {
         private static Uri _baseUri = new Uri("ms-appx:///");
         private static WriteableBitmap wbitmap = new WriteableBitmap(500,500);
@@ -243,14 +243,8 @@ namespace VerySimpleRSS.Data
         public static IEnumerable<SampleDataGroup> GetGroups(string uniqueId)
         {
             if (!uniqueId.Equals("AllGroups")) throw new ArgumentException("Only 'AllGroups' is supported as a collection of groups");
-            try
-            {
-                return _sampleDataSource.AllGroups;
-            }
-            catch
-            {
-                return null;
-            }
+
+            return _sampleDataSource.AllGroups;
         }
 
         public static SampleDataGroup GetGroup(string uniqueId)
@@ -272,7 +266,7 @@ namespace VerySimpleRSS.Data
         public SampleDataSource()
         {
             var grp1 = new SampleDataGroup("stud", "Новости МИЦ", "Последние обновления новостей о мероприятих МИЦ", "LightGray.png", "Новости МИЦ");
-            var doc = XDocument.Load("http://ulmic.ru/index.php?format=feed&type=rss");//http://blogs.msdn.com/b/rustudents/rss.aspx");
+            var doc = XDocument.Load("http://ulmic.ru/index.php?format=feed&type=rss");
             Func<string,string> cvt = Windows.Data.Html.HtmlUtilities.ConvertToText;
             var res = from x in doc.Descendants("item")//251 127 64
                       select new SampleDataItem(

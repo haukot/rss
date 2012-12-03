@@ -8,7 +8,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Documents;
 
-namespace VerySimpleRSS.Common
+namespace MICRSSApplication.Common
 {
     /// <summary>
     /// Оболочка <see cref="RichTextBlock"/>, создающая столько дополнительных столбцов

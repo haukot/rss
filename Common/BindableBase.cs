@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Windows.UI.Xaml.Data;
 
-namespace VerySimpleRSS.Common
+namespace MICRSSApplication.Common
 {
     /// <summary>
     /// Реализация интерфейса <see cref="INotifyPropertyChanged"/> для упрощения моделей.

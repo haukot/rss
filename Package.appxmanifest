@@ -2,8 +2,8 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="09c7ee1a-08a6-4802-8f48-0b1da4b226b5" Publisher="CN=dmitryso" Version="1.0.0.0" />
   <Properties>
-    <DisplayName>VerySimpleRSS</DisplayName>
-    <PublisherDisplayName>dmitryso</PublisherDisplayName>
+    <DisplayName>MICRSSApplication</DisplayName>
+    <PublisherDisplayName>MIC Developers Team</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -14,10 +14,13 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="VerySimpleRSS.App">
-      <VisualElements DisplayName="VerySimpleRSS" Logo="Assets\Logo1.png" SmallLogo="Assets\SmallLogo.png" Description="VerySimpleRSS" ForegroundText="light" BackgroundColor="#F47F05">
-        <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="Assets\SplashScreen.png" />
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MICRSSApplication.App">
+      <VisualElements DisplayName="Новости МИЦ" Logo="Assets\Logo1.png" SmallLogo="Assets\SmallLogo.png" Description="Приложение для отображения RSS новостей Молодежного Инициативного Центра." ForegroundText="light" BackgroundColor="#F47F05">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\StoreLogo1.png" ShortName="MICNews" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#F47F05" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
       </VisualElements>
     </Application>
   </Applications>

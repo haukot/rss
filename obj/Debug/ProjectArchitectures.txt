@@ -1,1 +1,1 @@
-D:\programming\git\rss\VerySimpleRSS.csproj;neutral
+D:\programming\миц\rss\MICRSSApplication.csproj;neutral

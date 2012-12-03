@@ -1,4 +1,4 @@
-﻿using VerySimpleRSS.Data;
+﻿using MICRSSApplication.Data;
 
 using System;
 using System.Collections.Generic;
@@ -16,13 +16,13 @@ using Windows.UI.Xaml.Navigation;
 
 // Шаблон элемента страницы сведений о группе задокументирован по адресу http://go.microsoft.com/fwlink/?LinkId=234229
 
-namespace VerySimpleRSS
+namespace MICRSSApplication
 {
     /// <summary>
     /// Страница, на которой показываются общие сведения об отдельной группе, включая предварительный просмотр элементов
     /// внутри группы.
     /// </summary>
-    public sealed partial class GroupDetailPage : VerySimpleRSS.Common.LayoutAwarePage
+    public sealed partial class GroupDetailPage : MICRSSApplication.Common.LayoutAwarePage
     {
         public GroupDetailPage()
         {
